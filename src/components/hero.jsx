@@ -49,13 +49,11 @@ export default function Hero() {
             Portfólio
           </h1>
 
-          <h2 className="mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black drop-shadow-lg">
-            André Luis
-          </h2>
+         
         </div>
       </section>
 
-      {/* TECNOLOGIAS */}
+      
       
     </main>
   )
