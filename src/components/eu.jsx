@@ -49,14 +49,12 @@ export default function Portfolio() {
       imagem: logoKaleidoscope,
       link: "https://kaleidoscope.com.br/",
       descricao: "Site institucional com design moderno e animações fluidas",
-      tags: ["React", "Tailwind CSS", "Framer Motion"],
     },
     {
       titulo: "Econect Ambiental",
       imagem: logoEconect,
       link: "https://econectambiental.com.br/",
       descricao: "Dashboard e landing page para consultoria ambiental",
-      tags: ["React", "Vite", "TypeScript"],
     },
   ];
 
@@ -77,33 +75,10 @@ export default function Portfolio() {
               André Cavalcanti
             </h1>
             <p className="text-xl md:text-2xl text-neutral-400 font-light">
-              Front-End Developer & UI Enthusiast
+              Front-End Developer
             </p>
             
-            <div className="flex items-center justify-center gap-4 pt-4">
-              <a
-                href="https://github.com/andrelca"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 text-neutral-400 hover:text-neutral-100 transition-colors"
-              >
-                <FaGithub size={22} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/andreluiscavalcantiaraujo/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 text-neutral-400 hover:text-neutral-100 transition-colors"
-              >
-                <FaLinkedin size={22} />
-              </a>
-              <a
-                href="mailto:andreluiscaraujo@gmail.com"
-                className="p-3 text-neutral-400 hover:text-neutral-100 transition-colors"
-              >
-                <Mail size={22} />
-              </a>
-            </div>
+            
           </motion.header>
 
           {/* Stack */}
@@ -148,7 +123,7 @@ export default function Portfolio() {
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mt-6">
-                  {["React", "TypeScript", "Tailwind CSS", "Vite", "UI/UX", "Responsivo"].map((skill) => (
+                  {["React", "TypeScript", "Tailwind CSS", "Vite", "UI/UX", "Site Responsivo"].map((skill) => (
                     <span 
                       key={skill}
                       className="px-3 py-1.5 text-xs text-neutral-400 bg-neutral-800/50 rounded-full border border-neutral-700/50"
@@ -194,20 +169,9 @@ export default function Portfolio() {
                     <ExternalLink size={16} className="text-neutral-600 group-hover:text-neutral-400 transition-colors flex-shrink-0 mt-1" />
                   </div>
                   
-                  <p className="text-sm text-neutral-500 mb-4">
+                  <p className="text-sm text-neutral-500">
                     {projeto.descricao}
                   </p>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {projeto.tags.map((tag) => (
-                      <span 
-                        key={tag} 
-                        className="text-[11px] text-neutral-500 bg-neutral-800/50 px-2.5 py-1 rounded-md"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
                 </a>
               ))}
             </div>
